@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservation | XYZ Resorts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">XYZ<span>Resorts</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="index.html#about" class="nav-link">About Us</a>
+      <a href="index.html#menu" class="nav-link">Menu</a>
+      <a href="index.html#gallery" class="nav-link">Gallery</a>
+      <a href="reservation.html" class="nav-link active">Reservation</a>
+      <a href="index.html#maps" class="nav-link">Maps</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== RESERVATION HERO STRIP ===== -->
+<section class="res-hero">
+  <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=1600&auto=format&fit=crop" alt="Poolside dining table at XYZ Resorts">
+  <div class="res-hero-overlay"></div>
+  <div class="res-hero-text reveal-up">
+    <p class="eyebrow eyebrow-light">Reservation</p>
+    <h1>Book your table by the water</h1>
+  </div>
+</section>
+
+<!-- ===== RESERVATION FORM ===== -->
+<section class="res-section">
+  <div class="section-wrap res-wrap">
+    <form id="reservationForm" class="res-form fade-up" novalidate>
+
+      <div class="form-row">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="contact">Contact Number</label>
+        <input type="tel" id="contact" name="contact" placeholder="+91 98765 43210" required>
+      </div>
+
+      <div class="form-row">
+        <label for="guests">Guests</label>
+        <div class="select-wrap">
+          <select id="guests" name="guests" required>
+            <option value="" disabled selected>Select guests</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6+">6+ Guests</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Time</label>
+        <div class="time-row">
+          <div class="select-wrap">
+            <select id="hour" name="hour" required>
+              <option value="" disabled selected>Hour</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+              <option>9</option><option>10</option><option>11</option><option>12</option>
+            </select>
+          </div>
+          <div class="select-wrap">
+            <select id="ampm" name="ampm" required>
+              <option value="" disabled selected>AM/PM</option>
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-gold res-submit">Reserve Table</button>
+
+      <p class="res-confirm" id="resConfirm">Your table has been requested — we'll confirm shortly by phone.</p>
+    </form>
+
+    <div class="res-side fade-up delay-1">
+      <img src="https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?q=80&w=900&auto=format&fit=crop" alt="Elegant resort table setting">
+      <div class="res-side-card">
+        <h3>Reservation Hours</h3>
+        <p>Breakfast — 7:00 AM to 10:30 AM</p>
+        <p>Lunch — 12:30 PM to 3:30 PM</p>
+        <p>Dinner — 7:00 PM to 11:00 PM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="section-wrap footer-grid" style="grid-template-columns:1fr;">
+    <div class="footer-info">
+      <a href="index.html" class="brand brand-light">XYZ<span>Resorts</span></a>
+      <p>Thandavapura, Karnataka, India</p>
+      <p>+91 98765 43210 &nbsp;·&nbsp; stay@xyzresorts.com</p>
+      <p class="footer-copy">© 2026 XYZ Resorts. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="reservation.js"></script>
+</body>
+</html>

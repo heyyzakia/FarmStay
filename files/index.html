@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XYZ Resorts | Luxury Escape by the Water</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="brand">XYZ<span>Resorts</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="reservation.html" class="nav-link">Reservation</a>
+      <a href="#maps" class="nav-link">Maps</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=1920&auto=format&fit=crop" alt="Infinity pool overlooking the ocean at XYZ Resorts" class="hero-img">
+    <div class="hero-overlay"></div>
+    <div class="water-shimmer"></div>
+  </div>
+
+  <div class="hero-top">
+    <p class="hero-eyebrow reveal-up">Thandavapura, Karnataka</p>
+    <h2 class="hero-tagline reveal-up delay-1">Where the horizon meets the water</h2>
+  </div>
+
+  <div class="hero-bottom">
+    <h1 class="hero-title reveal-up delay-2">XYZ RESORTS</h1>
+    <a href="reservation.html" class="btn btn-gold reveal-up delay-3">Reserve Your Table</a>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="section-wrap about-grid">
+    <div class="about-image fade-in-left">
+      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1200&auto=format&fit=crop" alt="XYZ Resorts poolside villa">
+      <div class="about-image-accent"></div>
+    </div>
+    <div class="about-content fade-in-right">
+      <p class="eyebrow">About Us</p>
+      <h2>A quiet luxury, <em>held by water</em></h2>
+      <p class="about-text">
+        Tucked into the hills of Thandavapura, XYZ Resorts is built around a single idea:
+        that rest should feel like floating. Our villas open onto private decks, our infinity
+        pool blurs into the sky, and every plate on our menu is grown within walking distance
+        of the kitchen. This is a resort for people who travel to slow down.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="24">0</span>
+          <span class="stat-label">Private Villas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="12">0</span>
+          <span class="stat-label">Years of Hospitality</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="98">0</span>
+          <span class="stat-label">% Guest Return Rate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path class="wave-path" d="M0,30 C300,60 900,0 1200,30 L1200,60 L0,60 Z"></path></svg>
+  </div>
+</section>
+
+<!-- ===== AMENITIES ===== -->
+<section class="amenities" id="amenities">
+  <div class="section-wrap amenities-grid">
+    <div class="amenities-list">
+      <p class="eyebrow eyebrow-light">Amenities</p>
+      <h2 class="amenities-title">Everything you need, <em>nothing you don't</em></h2>
+
+      <ul class="amenity-items">
+        <li class="amenity-item">
+          <div class="amenity-icon">🏊</div>
+          <div>
+            <h3>Infinity Pool</h3>
+            <p>A 45-metre edge pool overlooking the valley, heated year-round.</p>
+          </div>
+        </li>
+        <li class="amenity-item">
+          <div class="amenity-icon">🧖</div>
+          <div>
+            <h3>Spa &amp; Wellness</h3>
+            <p>Ayurvedic treatments, steam rooms, and sunrise yoga on the deck.</p>
+          </div>
+        </li>
+        <li class="amenity-item">
+          <div class="amenity-icon">🍽️</div>
+          <div>
+            <h3>Farm-to-Table Dining</h3>
+            <p>Seasonal menus sourced from our own kitchen garden, daily.</p>
+          </div>
+        </li>
+        <li class="amenity-item">
+          <div class="amenity-icon">🚲</div>
+          <div>
+            <h3>Nature Trails</h3>
+            <p>Guided cycling and walking trails through the surrounding hills.</p>
+          </div>
+        </li>
+        <li class="amenity-item">
+          <div class="amenity-icon">🛎️</div>
+          <div>
+            <h3>24-Hour Concierge</h3>
+            <p>Personal service for every booking, transfer, and request.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="amenities-video fade-in-right">
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1573052905904-34ad8c27f0cc?q=80&w=1200&auto=format&fit=crop">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-swimming-pool-in-a-luxury-hotel-1233-large.mp4" type="video/mp4">
+      </video>
+      <div class="video-frame-accent"></div>
+      <span class="video-caption">The Infinity Pool, live</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="menu" id="menu">
+  <div class="section-wrap">
+    <p class="eyebrow center">Menu</p>
+    <h2 class="center">Tastes of the valley</h2>
+    <div class="menu-grid">
+      <div class="menu-card reveal-up">
+        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=800&auto=format&fit=crop" alt="Grilled river fish plate">
+        <div class="menu-card-body">
+          <span class="menu-tag">Signature</span>
+          <h3>Coconut &amp; Lemongrass Fish</h3>
+          <p>River fish, coconut broth, charred lime, garden herbs.</p>
+          <span class="menu-price">₹950</span>
+        </div>
+      </div>
+      <div class="menu-card reveal-up delay-1">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop" alt="Fresh garden salad">
+        <div class="menu-card-body">
+          <span class="menu-tag">Garden</span>
+          <h3>Kitchen Garden Bowl</h3>
+          <p>Heirloom greens, roasted seeds, citrus vinaigrette.</p>
+          <span class="menu-price">₹550</span>
+        </div>
+      </div>
+      <div class="menu-card reveal-up delay-2">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="Wood fired dessert">
+        <div class="menu-card-body">
+          <span class="menu-tag">Sweet</span>
+          <h3>Jaggery Caramel Tart</h3>
+          <p>Wood-fired tart, salted jaggery caramel, clotted cream.</p>
+          <span class="menu-price">₹450</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+  <div class="section-wrap">
+    <p class="eyebrow center">Gallery</p>
+    <h2 class="center">Moments at XYZ</h2>
+    <div class="gallery-grid">
+      <img class="g-item g-tall" src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=900&auto=format&fit=crop" alt="Resort pool at sunset">
+      <img class="g-item" src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?q=80&w=900&auto=format&fit=crop" alt="Luxury villa bedroom">
+      <img class="g-item" src="https://images.unsplash.com/photo-1544986581-efac024faf62?q=80&w=900&auto=format&fit=crop" alt="Resort dining setup">
+      <img class="g-item g-tall" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=900&auto=format&fit=crop" alt="Poolside loungers">
+      <img class="g-item" src="https://images.unsplash.com/photo-1519449556851-5720b33024e7?q=80&w=900&auto=format&fit=crop" alt="Spa treatment room">
+      <img class="g-item" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=900&auto=format&fit=crop" alt="Resort exterior garden">
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESERVATION CTA ===== -->
+<section class="cta-band">
+  <div class="section-wrap cta-inner">
+    <h2>Your table by the water is waiting</h2>
+    <a href="reservation.html" class="btn btn-outline">Make a Reservation</a>
+  </div>
+</section>
+
+<!-- ===== MAPS / FOOTER ===== -->
+<footer class="site-footer" id="maps">
+  <div class="section-wrap footer-grid">
+    <div class="footer-info">
+      <a href="#home" class="brand brand-light">XYZ<span>Resorts</span></a>
+      <p>Thandavapura, Karnataka, India</p>
+      <p>+91 98765 43210 &nbsp;·&nbsp; stay@xyzresorts.com</p>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="reservation.html">Reservation</a>
+      </div>
+      <p class="footer-copy">© 2026 XYZ Resorts. All rights reserved.</p>
+    </div>
+    <div class="footer-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31201.951136520645!2d76.66042354805596!3d12.163791789791393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf68fbf12abd23%3A0xa9c9c5bb17f60fe6!2sThandavapura%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1788066745594!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="XYZ Resorts location on Google Maps"></iframe>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
